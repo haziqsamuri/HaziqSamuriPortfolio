@@ -1,0 +1,225 @@
+body{
+    font-family: Verdana, Geneva, sans-serif;
+    padding: 0 auto;
+    margin: 0 auto;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+.container{
+    display: grid;
+    background-color:#E6FDFF;
+    grid-template-columns: 1;
+    grid-template-areas:
+    "header "
+    "about "
+    "projects "
+    "contact "
+    "footer ";
+    
+    
+}
+.header {
+    grid-area:header;
+    background-color: #C3FDFF;
+    text-align: center;
+}
+/* .header h1{
+    display:inline;
+} */
+.about {
+    grid-area:about;
+    
+    background-color: white;
+}
+.projects{
+    grid-area:projects;
+    /* background-color: blue; */
+ 
+    height:auto;
+    margin-left: 7%;
+    margin-right: 7%;
+   
+}
+
+.proj{
+    padding: 4%;
+} 
+.title{
+    grid-column-end: span 1;
+    background-color:lightblue;
+}
+
+
+.image{
+    position: relative;
+	cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+	-moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out,
+    transform 0.3s ease-in-out ;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+.image:hover{
+	transform: scale(1.03); 
+}
+.imageClass{
+    max-width: 100%;
+    height: auto;
+}
+.text{
+    position: relative;
+    max-height: 1000px;
+    max-width: 1000px;
+    min-height: 100%;
+    background-color: brown;
+    background-image: url(1000px.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+.text-box-content{
+    line-height: 1.8;
+    color: #616569;
+    letter-spacing: .03em;
+    font-size: 1.3vw;
+}
+
+
+.contact{
+    grid-area: contact;
+    background-color: lightgoldenrodyellow;
+}
+.footer{
+    grid-area: footer;
+    background-color: lightgreen;
+}
+.button-git{
+    background-image:url("http://www.stickpng.com/assets/images/5847f98fcef1014c0b5e48c0.png");
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border: none;
+    padding: 20px;
+    width: 20px;
+    border-radius: 900px;
+    height: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.button-git:hover {
+	transform: scale(1.05); 
+}
+
+.button-site{
+    background-image:url("http://pixsector.com/cache/cce4660e/av4c26b04321e0f8af280.png");
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border: none;
+    padding: 20px;
+    width: 20px;
+    border-radius: 900px;
+    height: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.button-site:hover {
+	transform: scale(1.05); 
+}
+@media screen and (min-width: 1081px) 
+{
+    
+    .container{
+        background-color:#E6FDFF;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-areas:
+        "header header"
+        "about ."
+        "projects projects"
+        "contact contact"
+        "footer footer";
+        
+        
+        
+    }
+    .projects{
+        grid-area:projects;
+        background-color: blue;
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+    .image{
+
+        margin-top:0;
+        margin-bottom:0;
+    }
+    .text{
+        
+        margin-top:0;
+        margin-bottom:0;
+    }
+    .right{
+        float: right;
+        width:45%;
+        height:auto;
+    }
+    .left{
+        float:left;
+        width:45%;
+        height:auto;
+        
+
+    }
+    /* .proj:nth-child(odd) div.image{
+        float:right;
+        height: auto;
+    }
+    .proj:nth-child(odd) div.text{
+        float:left;
+        height: auto;
+    }
+    .proj:nth-child(even) div.image{
+        display: block;
+        float:left;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+    .proj:nth-child(even) div.text{
+        float:right;
+        height: auto;
+    } */
+    /* .left{
+        grid-column: 1;
+        height: 200px;
+    }
+    .right{
+        grid-column: 2;
+        height: 200px;
+    } */
+    /* .title{
+        grid-column-end: span 2;
+        background-color:lightblue;
+    } */
+    /* .project {
+        width: 480px;
+        height: 300px;
+        overflow: hidden;
+      }
+    .left{
+        float:left;
+    }
+    .right{
+        float:right;
+    } */
+}
+
