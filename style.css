@@ -271,9 +271,8 @@ body{
     position: relative;
     max-height: 450px;
     max-width: 850px;
-    background-color: #f9bb9f ;
+    background-color: red ;
     background-size: contain;
-    background-image: url(images/text.png);
     background-repeat: no-repeat;
     overflow: auto;
     -webkit-transition: 0.3s ease-in-out, 
