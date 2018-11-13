@@ -271,7 +271,6 @@ body{
     position: relative;
     max-height: 450px;
     max-width: 850px;
-    min-height: 100%;
     background-color: #f9bb9f ;
     background-size: contain;
     background-image: url(images/text.png);
