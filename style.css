@@ -15,8 +15,6 @@ body{
     "projects "
     "contact "
     "footer ";
-    
-    
 }
 
 .header {
@@ -68,7 +66,8 @@ body{
     margin-left: 10px;
 }
 .email-button:hover{
-    background-image: url(images/email-light.png);
+    border: 1px solid #343239;
+    background-color: white;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .git-button:hover{
@@ -103,17 +102,6 @@ body{
     border-bottom: 1px solid #343239;
     margin: 100px 4% auto 4%;
 }
-
-/* .divider:after {
-    content: '';
-    position: absolute;
-    left:39%;
-    top: 30px;
-    height  : 25px;
-    width   : 22%;
-    border-bottom:1px solid black;
-} */
-
 .email{
     background-image: url(images/email.jpg);
 }
@@ -128,8 +116,6 @@ body{
     "education "
     "languages "
     "frameworks";
-/*     
-    background-color: #F9A26C; */
 }
 .about-content{
     margin-top:1%;
@@ -176,9 +162,6 @@ body{
 .educ span{
     display:block;
 }
-/* .para{
-    margin-top: 150px;
-} */
 .title{
     grid-column-end: span 1;
     background-color:lightblue;
@@ -190,6 +173,7 @@ body{
     margin-right: 5%;
 }
 .languages-table{
+    margin-right:5px;
     text-align: center;
     border-spacing: 5px;
     border-top: 1px solid black;
@@ -204,6 +188,7 @@ body{
     margin-right: 5%;
 }
 .frameworks-table{
+    margin-left:500px;
     text-align: center;
     border-spacing: 5px;
     border-top: 1px solid #343239;
@@ -217,19 +202,15 @@ body{
 }
 .projects{
     grid-area:projects;
-    /* background-color: blue; */
- 
     height:auto;
     margin-left: 7%;
     margin-right: 7%;
    
 }
-
 .proj{
     padding: 4%;
     
 } 
-
 .imageClass{
     border-radius:8px;
     max-width: 100%;
@@ -247,18 +228,6 @@ body{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 }
-
-/* .text{
-    font-size: 1em;
-    border-radius:8px;
-    position: relative;
-    -webkit-transition: 0.3s ease-in-out, 
-    -webkit-transform 0.3s ease-in-out;
-	-moz-transition:  0.3s ease-in-out, 
-    -moz-transform 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out,
-    transform 0.3s ease-in-out ;
-} */
 .textImg{
     display:block;
     border-radius:8px;
@@ -283,7 +252,6 @@ body{
     transform 0.3s ease-in-out ;
     margin-bottom:100px;
 }
-
 .text-box-content{
     margin-left: 5%;
     margin-top: 3%;
@@ -299,7 +267,6 @@ body{
 .text:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-
 .text h3{
     text-align: center;
     text-decoration: bold;
@@ -318,7 +285,6 @@ body{
     border-spacing: 20px 0;
     font-size: 1.8vw;
 }
-
 .footer{
     padding: 0.5%;
     grid-area: footer;
@@ -362,7 +328,6 @@ body{
     margin-right: 20px;
     top: 0px;
 }
-
 @media screen and (min-width: 1081px) 
 {
     
@@ -389,8 +354,6 @@ body{
         "about-content about-content"
         "education education"
         "languages frameworks";
-    /*     
-        background-color: #F9A26C; */
     }
     .para{
         margin-top: 20px;
@@ -415,12 +378,10 @@ body{
         bottom: 5%;
     }
     .image{
-
         margin-top:0;
         margin-bottom:0;
     }
     .text{
-
         margin-top:0;
         margin-bottom:0;
     }
@@ -444,10 +405,7 @@ body{
         float:left;
         width:45%;
         height:auto;
-        
-
     }
-
     .headerName:after {
         left:30%;
         width   : 40%;
@@ -457,58 +415,9 @@ body{
         left:39%;
         width   : 22%;
     }
-    /* .proj:nth-child(odd) div.image{
-        float:right;
-        height: auto;
-    }
-    .proj:nth-child(odd) div.text{
-        float:left;
-        height: auto;
-    }
-    .proj:nth-child(even) div.image{
-        display: block;
-        float:left;
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;
-    }
-    .proj:nth-child(even) div.text{
-        float:right;
-        height: auto;
-    } */
-    /* .left{
-        grid-column: 1;
-        height: 200px;
-    }
-    .right{
-        grid-column: 2;
-        height: 200px;
-    } */
-    /* .title{
-        grid-column-end: span 2;
-        background-color:lightblue;
-    } */
-    /* .project {
-        width: 480px;
-        height: 300px;
-        overflow: hidden;
-      }
-    .left{
-        float:left;
-    }
-    .right{
-        float:right;
-    } */
 /* 
     colour for image background : #f58857 */
 }
-/* @media screen and (min-width: 1700px) 
-{
-    .text{
-        height: 368.7px;
-        width:703.8px;
-    }
-} */
 @media screen and (min-width: 1921px) 
 {
     .text h3{
