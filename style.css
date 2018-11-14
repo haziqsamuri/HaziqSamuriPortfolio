@@ -118,7 +118,7 @@ body{
     background-image: url(images/email.jpg);
 }
 .about {
-    margin: 3% 20% 0 20%;
+    margin: 3% 7% 0 7%;
     grid-area:about;
     display:grid;
     grid-template-columns: 1;
@@ -382,6 +382,7 @@ body{
     }
 
     .about {
+        margin: 3% 20% 0 20%;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
         "about-subheader about-subheader"
@@ -425,6 +426,7 @@ body{
     }
     .text h3{
         font-size: 1.5vw;
+        margin-bottom:2%;
     }
     .text p{
         margin-top: 0;
