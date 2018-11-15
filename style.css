@@ -66,11 +66,11 @@ body{
     margin-left: 10px;
 }
 .email-button:hover{
-    background-color: white;
+    background-image: url(images/email-light.png);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .git-button:hover{
-    background-color: white;
+    background-image: url(images/github-light.png);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .git-button{
